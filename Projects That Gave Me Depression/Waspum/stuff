@@ -1,0 +1,22 @@
+
+                def getAveragePosition(mask):
+                    xAverage = 0
+                    yAverage = 0
+                    count = 0
+                    resolution = 25
+                    for y in range(0, height, resolution):
+                        for x in range(0, width, resolution):
+                            if mask[y][x] == 0:
+                                xAverage += x
+                                yAverage += y
+                                count += 1
+
+                    if count > 0:
+                        xAverage = xAverage / count
+                        yAverage = yAverage / count
+                    return (xAverage, yAverage)    
+
+                    
+
+    x, y, w, h = cv2.boundingRect(contour)
+                cv2.rectangle(img, (x,y), (x + w, y + h), (0, 0, 255), 2)

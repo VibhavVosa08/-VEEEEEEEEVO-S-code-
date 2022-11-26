@@ -1,0 +1,36 @@
+import math
+
+S= int(input("Type 1 for two points, Type 0 for one point and slope: "))
+if (S == 1):
+  
+ print ("Enter Values (A,B) (C,D)")
+ A= int(input("A: "))
+ B= int(input("B: "))
+ C= int(input("C: "))
+ D= int(input("D: "))
+ m1 = B-D
+ m2 = A-C
+ m = m1/m2
+ b = m*(-A) + B
+
+ PS= "y-" +str(B)+ " = " +str(m1)+ "/" +str(m2)+ " (x-" +str(A)+ ")"
+ print ("Point Slope: " +PS)
+
+ SI= "y = " +str(m1)+ "/" +str(m2)+ " x + " +str(b)
+ print ("Slope Intercept: " +SI)
+
+elif (S == 0): 
+
+ print ("Enter Values (X,Y) , M = m1/m2")
+ X= int(input("X: "))
+ Y= int(input("Y: "))
+ m1= int(input("m1: "))
+ m2= int(input("m2: "))
+ m = m1/m2
+ b = m*(-X) + Y
+
+ PS= "y-" +str(Y)+ " = " +str(m1)+ "/" +str(m2)+ " (x-" +str(X)+ ")"
+ print ("Point Slope: " +PS)
+
+ SI= "y = " +str(m1)+ "/" +str(m2)+ " x + " +str(b)
+ print ("Slope Intercept: " +SI)
