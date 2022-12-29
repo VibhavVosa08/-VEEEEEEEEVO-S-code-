@@ -1,6 +1,8 @@
-def cent_to_fahr(cent):
-    print ((cent*1.8)+ 32)
 
-
-x = int(input("cum "))
-print (cent_to_fahr(x))
+# Using for loop
+ 
+lis = [1, 2, 3, 4, 5]
+ 
+for i in range(0, len(lis), 2):
+     
+    print(lis[i], end = " ") 
