@@ -1,8 +1,7 @@
+start_list = [5, 3, 1, 2, 4]
+square_list = []
 
-# Using for loop
- 
-lis = [1, 2, 3, 4, 5]
- 
-for i in range(0, len(lis), 2):
-     
-    print(lis[i], end = " ") 
+for x in start_list:
+  start_list.append(x ** 2)
+
+print (square_list)
